@@ -1,6 +1,5 @@
-Flatty Diver
-####################
+# Flatty Diver
 
--HTML 5
--CSS
--Javscript
+- HTML 5
+- CSS
+- Javscript
