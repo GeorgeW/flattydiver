@@ -1,0 +1,93 @@
+/*
+Green Flatty Diver Theme
+Put this in after the main css it overides the colors
+
+light green = #4f9165
+dark green = #3f7455
+*/
+.login-bar{
+    background-color: #3f7455;
+}
+.login-bar a{
+    background-color: #4f9165;
+    color: #3f7455;
+}
+.login-bar a:hover{
+    color: rgba(255,255,255,.6);
+}
+.title h1{
+    color: #3f7455;
+}
+.title span{
+    color: #457f5d;
+}
+.title input[type="search"]{
+    color: #fff;
+    background-color: #4f9165;
+}
+.nav{
+    background-color: #3f7455;
+}
+.nav a{
+    color: #fff;
+}
+.nav a:hover{
+    color: #fff;
+}
+.info-box{
+    background-color: #4f9165;
+}
+.info-box div{
+    background-color: #3f7455;
+}
+.info-box h1{
+    color: #fff;
+}
+.info-box-description {
+    color: #fff;
+}
+.price-box-container h3, .price-box-container h4{
+    color: #fff;
+}
+.price-box-container li{
+    color: #fff;
+}
+.price-box-normal{
+    background-color: #4f926c;
+}
+.package-name{
+    background-color: #3f7455;
+    border-bottom: 3px solid #fff;
+}
+.package-price{
+    background-color: #457f5d;
+}
+.order-now a{
+    background-color: #3f7455;
+    color: #fff;
+}
+.order-now a:hover{
+    background-color: #457f5d;
+}
+.price-box-extended{
+    background-color: #4f926c;
+}
+.package-highlight{
+    color :#fff;
+    font-style: italic;
+}
+footer{
+    background-color: #3f7455;
+}
+.bottom span{
+    color: #fff;
+}
+.bottom a{
+    color: #fff;
+}
+footer h5{
+    color: #fff;
+}
+.footer-info{
+    color: #fff;
+}

@@ -1,0 +1,94 @@
+/*
+White Flatty Diver theme
+add this after main css it overides the colors
+*/
+body{
+	background-color: #fff;
+}
+.login-bar{
+    background-color: #232d45;
+}
+.login-bar a{
+    background-color: #fff;
+    color: #232d45;
+}
+.login-bar a:hover{
+    color: #555;
+}
+.title h1{
+    color: #232d45;
+}
+.title span{
+    color: #232d45;
+}
+.title input[type="search"]{
+    color: #fff;
+    background-color: #232d45;
+}
+.nav{
+    background-color: #232d45;
+}
+.nav a{
+    color: #fff;
+}
+.nav a:hover{
+    color: #fff;
+}
+.info-box{
+    background-color: #232d45;
+}
+.info-box div{
+    background-color: #fff;
+}
+.info-box h1{
+    color: #232d45;
+}
+.info-box-description {
+    color: #fff;
+}
+.price-box-container h3, .price-box-container h4{
+    color: #fff;
+}
+.price-box-container li{
+    color: #fff;
+}
+.price-box-normal{
+    background-color: #232d45;
+}
+.package-name{
+    background-color: #56708c;
+    border-bottom: 3px solid #fff;
+}
+.package-price{
+    background-color: #232d45;
+}
+.order-now a{
+    background-color: #56708c;
+    color: #fff;
+}
+.order-now a:hover{
+    background-color: #fff;
+    color: #56708c;
+}
+.price-box-extended{
+    background-color: #232d45;
+}
+.package-highlight{
+    color :#fff;
+    font-style: italic;
+}
+footer{
+    background-color: #232d45;
+}
+.bottom span{
+    color: #fff;
+}
+.bottom a{
+    color: #fff;
+}
+footer h5{
+    color: #fff;
+}
+.footer-info{
+    color: #fff;
+}

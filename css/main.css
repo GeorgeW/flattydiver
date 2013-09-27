@@ -1,0 +1,778 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #ffcfcf;
+    text-shadow: none;
+}
+
+::selection {
+    background: silver;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/*==========================================================================
+    Animations
+============================================================================ */
+@-webkit-keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+  }
+  60% {
+    opacity: .5;
+    -webkit-transform: translateY(10px);
+  }
+  
+  80% {
+    opacity: .5;
+    -webkit-transform: translateY(-10px);
+  }
+  
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes bounceInUp{
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-100px);
+  }
+  60% {
+    opacity: .5;
+    -moz-transform: translateY(10px);
+  }
+  
+  80% {
+    opacity: .5;
+    -moz-transform: translateY(-10px);
+  }
+  
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+@keyframes bounceInUp{
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  60% {
+    opacity: .5;
+    transform: translateY(10px);
+  }
+  
+  80% {
+    opacity: .5;
+    transform: translateY(-10px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ==========================================================================
+   Flatty Diver's Custom Styles
+   ========================================================================== */
+body{
+    background-color: #3f4e66;
+    font-family: "HelveticaNeue", "Helvetica";
+}
+a{
+    text-decoration: none;
+}
+section,
+div,
+nav{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 100%;
+}
+.login-bar{
+    height: 50px;
+    width: 100%;
+    background-color: #ac4b4b;
+    padding: .5em;
+}
+.login-bar a{
+    float: right;
+    margin-right: 1em;
+    /*background-color: #627f9f;*/
+    color: #fff;
+    padding: .3em;
+}
+.title{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.title div{
+    display: inline-block;
+}
+.title h1{
+    font-size: 4em;
+    color: #627f9f;
+    margin: 0 0 0 1em;
+    font-weight: 400;
+}
+.title span{
+    color: #ac4b4b;
+}
+.title input[type="search"]{
+    color: #fff;
+    background-color: #627f9f;
+    border: none;
+    font-size: 1em;
+    padding: .5em;
+    position: absolute;
+    right: 1em;
+    top: 2em;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    background-color: #ad4b4b;
+    padding: .6em;
+}
+.nav a{
+    color: #ffcfcf;
+    font-size: 1.5em;
+    padding: .5em;
+}
+.nav a:hover{
+    color: #fff;
+}
+.drop-down{
+
+}
+.dropdown:after{
+    content: url('../img/arrow.png');
+    margin-left: 41px;
+}
+.main{
+    width: 100%;
+    padding: 2%;
+}
+.info-box{
+    width: 100%;
+    padding: 1em;
+    background-color: #627f9f;
+    margin-bottom: 100px;
+}
+.info-box div{
+    display: inline-block;
+    width: 40%;
+    height: 200px;
+    margin: 4%;
+    background-color: #3f4e66;
+    padding: 1em;
+    text-align: center;
+    -webkit-animation: bounceInUp 2000ms;
+    -moz-animation: bounceInUp 2000ms;
+    -o-animation: bounceInUp 2000ms;
+    animation: bounceInUp 2000ms;
+}
+.info-box h1{
+    color: #fff;
+    font-size: 4em;
+}
+.info-box-description {
+    color: #fff;
+    font-weight: lighter;
+    width: 60%;
+}
+/*=======================================================================
+    Price Boxes
+========================================================================= */
+.price-box-container{
+    width: 80%;
+    padding: 1em;
+    margin: 0 auto;
+}
+.price-box-container h3, .price-box-container h4{
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+}
+.price-box-container li{
+    color: #fff;
+    font-weight: 100;
+    list-style: url('../img/check.png');
+}
+.price-box-normal{
+    display: inline-block;
+    width: 250px;
+    height: 400px;
+    background-color: #627f9f;
+    margin-right: 5px;
+}
+.top-box{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.package-name{
+    width: 100%;
+    height: 75px;
+    background-color: #ad4b4b;
+    padding-top: 1.5em;
+    border-bottom: 3px solid #ffcfcf;
+}
+.package-price{
+    width: 100%;
+    height: 75px;
+    background-color: #56708c;
+    padding-top: 1.5em;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+}
+.order-now{
+    text-align: center;
+}
+.order-now a{
+    background-color: #3f4e66;
+    padding: 1em 2em 1em 2em;
+    color: #fff;
+}
+.order-now a:hover{
+    background-color: #56708c;
+}
+.price-box-extended{
+    display: inline-block;
+    width: 250px;
+    height: 470px;
+    background-color: #627f9f;
+    margin-right: 5px;
+    -webkit-transform: translateY(5px);
+       -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+         -o-transform: translateY(5px);
+            transform: translateY(5px);
+}
+.price-box-extended .package-name{
+    height: 146px;
+}
+.price-box-extended ul{
+    padding-top: 75px;
+}
+.package-highlight{
+    text-align: center;
+    color :#fff;
+    font-style: italic;
+}
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #ad4b4b;
+    position: relative;
+}
+footer span{
+    display: inline-block;
+    padding: .5em;
+    font-size: .8em;
+}
+.bottom{
+    width: 700px;
+    margin: 0 auto;
+}
+.bottom span{
+    color: #ffcfcf;
+}
+.bottom a{
+    color: #ffcfcf;
+}
+footer h5{
+    font-size: 2em;
+    margin: 0;
+    color: #ffcfcf;
+}
+.footer-info{
+    width: 80%;
+    padding: 1em;
+    color: #fff;
+    margin-bottom: 2em;
+}
+/*Testing animation*/
+.roll-link {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+
+  /*  -webkit-perspective: 600px;
+       -moz-perspective: 600px;
+       -ms-perspective: 600px;
+       perspective: 600px;*/
+
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+       -ms-perspective-origin: 50% 50%;
+       perspective-origin: 50% 50%;
+       
+}
+
+.roll-link:hover {text-decoration:none;}
+
+.roll-link span {
+    display: block;
+    position: relative;
+    padding: 0 2px;
+
+    -webkit-transition: all 400ms ease;
+       -moz-transition: all 400ms ease;
+       -ms-transition: all 400ms ease;
+       transition: all 400ms ease;
+    
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+       -ms-transform-origin: 50% 0%;
+       transform-origin: 50% 0%;
+    
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+       -ms-transform-style: preserve-3d;
+       transform-style: preserve-3d;
+}
+.roll-link:hover span {
+        background: #3f4e66;
+         
+        -webkit-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+           -moz-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+           -ms-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+           transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+}
+
+.roll-link span:after {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 2px;
+    color: #fff;
+    background: #3f4e66;
+
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+       -ms-transform-origin: 50% 0%;
+       transform-origin: 50% 0%;
+
+    -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       -ms-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+}
+
+.dropdown-menu{
+    background-color: #fff;
+    z-index: 90000000000;
+    display: none;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+@media only screen and (min-width: 1280px){
+    .title input[type="search"]{
+        margin-left: 0;
+        position: absolute;
+        right: 1em;
+        top: 2em;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1024px){
+    .info-box{
+        height: 100%;
+    }
+    .info-box div{
+        display: inline-block;
+        width: 50%;
+        height: 200px;
+        margin: 2%;
+    }
+    .price-box-container{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1025px){
+    .info-box div{
+        width: 45%;
+        margin: 2%;
+    }
+    .info-box h1{
+        font-size: 3em;
+    }
+    .price-box-container{
+        width: 100%;
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px){
+    .info-box{
+        height: 100%;
+    }
+    .info-box div{
+        display: inline-block;
+        width: 90%;
+        height: 200px;
+        margin: 4%;
+    }
+    .title input[type="search"]{
+        margin-left: 40px;
+        position: absolute;
+        left: 0;
+        top: -2.5em;
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 768px){
+    .info-box{
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .info-box div{
+        display: inline-block;
+        width: 90%;
+        height: 200px;
+        margin: 4%;
+    }
+    .title input[type="search"]{
+        margin-left: 40px;
+        position: absolute;
+        left: 0;
+        top: -2.5em;
+        width: 150px;
+    }
+    .price-box-container{
+        width: 100%;
+        padding: 0;
+    }
+    .nav a{
+        padding: 0 0 0 .5em;
+    }
+    .dropdown{
+        content: url(../img/arrow.png);
+    }
+    .bottom{
+        width: 100%;
+    }  
+}
+@media only screen and (min-width: 320px) and (max-width: 400px){
+    .title input[type="search"]{
+        margin-left: 40px;
+        position: absolute;
+        left: 0;
+        top: -2.5em;
+        width: 150px;
+        display: none;
+    }
+    .title h1{
+        margin: 0 0 0 .5em;
+        font-size: 3em;
+    }
+    .nav a{
+        padding: 0 0 0 .1em;
+    }
+    .dropdown{
+        content: url('../img/arrow@x2.png');
+        width: 27px;
+        height: 14px;
+    }
+    .main{
+        padding: 0;
+    }
+    .info-box{
+        height: 100%;
+        padding: 0;
+    }
+    .info-box div{
+        display: inline-block;
+        width: 93%;
+        height: 200px;
+        margin: 4%;
+    }
+    .info-box h1{
+        font-size: 3em;
+    }
+    .info-box-description {
+        width: 98%;
+    }
+    .price-box-container{
+        width: 100%;
+        margin: 0 auto;
+    } 
+    .footer-info{
+        width: 100%;
+    }
+    .bottom{
+        width: 100%;
+    }  
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
