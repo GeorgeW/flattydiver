@@ -1,1 +1,6 @@
-Flatty Diver in Development
+Flatty Diver
+####################
+
+-HTML 5
+-CSS
+-Javscript
