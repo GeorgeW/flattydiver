@@ -262,6 +262,26 @@ footer span{
 footer span a{
     color: rgba(0,0,0,.5);
 }
+
+/*Social Icons*/
+.social-links{
+    margin-top: 1em;
+}
+.facebook{
+    content: url('../img/facebook.png');
+}
+.twitter{
+    content: url('../img/twitter.png');
+}
+.dribbble{
+    content: url('../img/dribbble.png');
+}
+.skype{
+    content: url('../img/skype.png');
+}
+.icloud{
+    content: url('../img/icloud.png');
+}
 /*Testing animation*/
 .roll-link {
     display: inline-block;
@@ -331,13 +351,6 @@ footer span a{
        -ms-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
        transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
 }
-
-.dropdown-menu{
-    background-color: #fff;
-    z-index: 90000000000;
-    display: none;
-}
-
 
 
 /* ==========================================================================
@@ -452,141 +465,22 @@ footer span a{
     /* Style adjustments for high resolution devices */
 }
 @media only screen and (min-width: 1280px){
-    .title input[type="search"]{
-        margin-left: 0;
-        position: absolute;
-        right: 1em;
-        top: 2em;
-    }
+
 }
 @media only screen and (min-width: 980px) and (max-width: 1024px){
-    .info-box{
-        height: 100%;
-    }
-    .info-box div{
-        display: inline-block;
-        width: 50%;
-        height: 200px;
-        margin: 2%;
-    }
-    .price-box-container{
-        width: 100%;
-        padding: 0;
-    }
+
 }
 @media only screen and (min-width: 1024px) and (max-width: 1025px){
-    .info-box div{
-        width: 45%;
-        margin: 2%;
-    }
-    .info-box h1{
-        font-size: 3em;
-    }
-    .price-box-container{
-        width: 100%;
-        padding: 0;
-    }
+
 }
 @media only screen and (min-width: 768px) and (max-width: 980px){
-    .info-box{
-        height: 100%;
-    }
-    .info-box div{
-        display: inline-block;
-        width: 90%;
-        height: 200px;
-        margin: 4%;
-    }
-    .title input[type="search"]{
-        margin-left: 40px;
-        position: absolute;
-        left: 0;
-        top: -2.5em;
-        width: 200px;
-    }
+
 }
 @media only screen and (min-width: 400px) and (max-width: 768px){
-    .info-box{
-        height: 100%;
-        margin-bottom: 10px;
-    }
-    .info-box div{
-        display: inline-block;
-        width: 90%;
-        height: 200px;
-        margin: 4%;
-    }
-    .title input[type="search"]{
-        margin-left: 40px;
-        position: absolute;
-        left: 0;
-        top: -2.5em;
-        width: 150px;
-    }
-    .price-box-container{
-        width: 100%;
-        padding: 0;
-    }
-    .nav a{
-        padding: 0 0 0 .5em;
-    }
-    .dropdown{
-        content: url(../img/arrow.png);
-    }
-    .bottom{
-        width: 100%;
-    }  
+
 }
 @media only screen and (min-width: 320px) and (max-width: 400px){
-/*    .title input[type="search"]{
-        margin-left: 40px;
-        position: absolute;
-        left: 0;
-        top: -2.5em;
-        width: 150px;
-        display: none;
-    }*/
-    .title h1{
-        /*margin: 0 0 0 .5em;*/
-        font-size: 3em;
-    }
-/*    .nav a{
-        padding: 0 0 0 .1em;
-    }*/
-/*    .dropdown{
-        content: url('../img/arrow@x2.png');
-        width: 27px;
-        height: 14px;
-    }
-    .main{
-        padding: 0;
-    }
-    .info-box{
-        height: 100%;
-        padding: 0;
-    }
-    .info-box div{
-        display: inline-block;
-        width: 93%;
-        height: 200px;
-        margin: 4%;
-    }
-    .info-box h1{
-        font-size: 3em;
-    }
-    .info-box-description {
-        width: 98%;
-    }
-    .price-box-container{
-        width: 100%;
-        margin: 0 auto;
-    } 
-    .footer-info{
-        width: 100%;
-    }
-    .bottom{
-        width: 100%;
-    }  */
+
 }
 /* ==========================================================================
    Print styles.
