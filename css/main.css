@@ -154,9 +154,13 @@ textarea {
 /* ==========================================================================
    Flatty Diver's Custom Styles
    ========================================================================== */
+html{
+    height: 100%;
+}
 body{
-    background-color: #3f4e66;
+    /*background-color: #3f4e66;*/
     font-family: "HelveticaNeue", "Helvetica";
+    height: 100%;
 }
 a{
     text-decoration: none;
@@ -171,213 +175,92 @@ nav{
 .container{
     width: 100%;
     height: 100%;
+    background: url('../img/diver.jpg') no-repeat center center fixed; /*Change this image for your background*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-.header{
-    width: 100%;
+header{
     height: 100%;
-}
-.login-bar{
-    height: 50px;
     width: 100%;
-    background-color: #ac4b4b;
-    padding: .5em;
-}
-.login-bar a{
-    float: right;
-    margin-right: 1em;
-    /*background-color: #627f9f;*/
-    color: #fff;
-    padding: .3em;
 }
 .title{
-    height: 100px;
-    width: 100%;
+    padding: .5em;
     position: relative;
+    font-size: 2em;
+    background-color: #bada55;
+    width: 400px;
+    color: rgba(255, 255, 255, .9);
 }
-.title div{
+.nav-container{
+    margin-top: 1em;
+}
+.nav-container nav a{
+    color: rgba(0,0,0,.5);
+    font-weight: bold;
+    padding: .5em;
+    background-color: #bada55;
+}
+.nav-container nav a:hover{
+    color: #bada55;
+    background-color: #444;
+}
+.page{
+    padding: 1em;
+    width: 100%;
+    display: none;
+}
+.page-title{
+    width: 20%;
+    color: rgba(0,0,0,.5);
+}
+.page-content{
+    width: 100%;
+}
+.page-content div{
     display: inline-block;
 }
-.title h1{
-    font-size: 4em;
-    color: #627f9f;
-    margin: 0 0 0 1em;
-    font-weight: 400;
-}
-.title span{
-    color: #ac4b4b;
-}
-.title input[type="search"]{
-    color: #fff;
+.page-content .small-box{
+    width: 30%;
     background-color: #627f9f;
-    border: none;
-    font-size: 1em;
-    padding: .5em;
-    position: absolute;
-    right: 1em;
-    top: 2em;
-}
-.nav{
-    height: 80px;
-    width: 100%;
-    background-color: #ad4b4b;
-    padding: .6em;
-}
-.nav a{
-    color: #ffcfcf;
-    font-size: 1.5em;
-    padding: .5em;
-}
-.nav a:hover{
-    color: #fff;
-}
-.drop-down{
-
-}
-.dropdown:after{
-    content: url('../img/arrow.png');
-    margin-left: 41px;
-}
-.main{
-    width: 100%;
-    padding: 2%;
-}
-.info-box{
-    width: 100%;
     padding: 1em;
-    background-color: #627f9f;
-    margin-bottom: 100px;
+    color: rgba(255, 255, 255, .6);
 }
-.info-box div{
-    display: inline-block;
-    width: 40%;
-    height: 200px;
-    margin: 4%;
-    background-color: #3f4e66;
-    padding: 1em;
-    text-align: center;
-    -webkit-animation: bounceInUp 2000ms;
-    -moz-animation: bounceInUp 2000ms;
-    -o-animation: bounceInUp 2000ms;
-    animation: bounceInUp 2000ms;
-}
-.info-box h1{
-    color: #fff;
-    font-size: 4em;
-}
-.info-box-description {
-    color: #fff;
-    font-weight: lighter;
+.page-content .big-box{
     width: 60%;
-}
-/*=======================================================================
-    Price Boxes
-========================================================================= */
-.price-box-container{
-    width: 80%;
+    background-color: #627f9f;
     padding: 1em;
-    margin: 0 auto;
+    color: rgba(255, 255, 255, .6);
 }
-.price-box-container h3, .price-box-container h4{
-    margin: 0;
-    color: #fff;
-    font-weight: 300;
-}
-.price-box-container li{
-    color: #fff;
-    font-weight: 100;
-    list-style: url('../img/check.png');
-}
-.price-box-normal{
-    display: inline-block;
-    width: 250px;
-    height: 400px;
-    background-color: #627f9f;
-    margin-right: 5px;
-}
-.top-box{
+.page-content .full-width-box{
     width: 100%;
-    height: 150px;
-    text-align: center;
+    background-color:  #627f9f;
+    padding: 1em;
+    color: rgba(255, 255, 255, .6);
+    margin-top: .5em;
 }
-.package-name{
-    width: 100%;
-    height: 75px;
-    background-color: #ad4b4b;
-    padding-top: 1.5em;
-    border-bottom: 3px solid #ffcfcf;
-}
-.package-price{
-    width: 100%;
-    height: 75px;
-    background-color: #56708c;
-    padding-top: 1.5em;
-    box-shadow: 0 0 2px rgba(0,0,0,.2);
-}
-.order-now{
-    text-align: center;
-}
-.order-now a{
-    background-color: #3f4e66;
-    padding: 1em 2em 1em 2em;
-    color: #fff;
-}
-.order-now a:hover{
-    background-color: #56708c;
-}
-.price-box-extended{
-    display: inline-block;
-    width: 250px;
-    height: 470px;
-    background-color: #627f9f;
-    margin-right: 5px;
-    -webkit-transform: translateY(5px);
-       -moz-transform: translateY(5px);
-        -ms-transform: translateY(5px);
-         -o-transform: translateY(5px);
-            transform: translateY(5px);
-}
-.price-box-extended .package-name{
-    height: 146px;
-}
-.price-box-extended ul{
-    padding-top: 75px;
-}
-.package-highlight{
-    text-align: center;
-    color :#fff;
-    font-style: italic;
+.open{
+    display: block;
+    -webkit-animation: bounceInUp 1000ms;
+    -moz-animation: bounceInUp 1000ms;
+    -o-animation: bounceInUp 1000ms;
+    animation: bounceInUp 1000ms;
 }
 footer{
     width: 100%;
-    height: 100%;
-    background-color: #ad4b4b;
-    position: relative;
+    height: 40px;
+    background-color: #bada55;
+    position: fixed;
+    bottom: 0;
+    padding-top: .8em;
 }
 footer span{
-    display: inline-block;
-    padding: .5em;
     font-size: .8em;
+    color: rgba(0,0,0,.5);
 }
-.bottom{
-    width: 700px;
-    margin: 0 auto;
-}
-.bottom span{
-    color: #ffcfcf;
-}
-.bottom a{
-    color: #ffcfcf;
-}
-footer h5{
-    font-size: 2em;
-    margin: 0;
-    color: #ffcfcf;
-}
-.footer-info{
-    width: 80%;
-    padding: 1em;
-    color: #fff;
-    margin-bottom: 2em;
+footer span a{
+    color: rgba(0,0,0,.5);
 }
 /*Testing animation*/
 .roll-link {
@@ -655,22 +538,22 @@ footer h5{
     }  
 }
 @media only screen and (min-width: 320px) and (max-width: 400px){
-    .title input[type="search"]{
+/*    .title input[type="search"]{
         margin-left: 40px;
         position: absolute;
         left: 0;
         top: -2.5em;
         width: 150px;
         display: none;
-    }
+    }*/
     .title h1{
-        margin: 0 0 0 .5em;
+        /*margin: 0 0 0 .5em;*/
         font-size: 3em;
     }
-    .nav a{
+/*    .nav a{
         padding: 0 0 0 .1em;
-    }
-    .dropdown{
+    }*/
+/*    .dropdown{
         content: url('../img/arrow@x2.png');
         width: 27px;
         height: 14px;
@@ -703,7 +586,7 @@ footer h5{
     }
     .bottom{
         width: 100%;
-    }  
+    }  */
 }
 /* ==========================================================================
    Print styles.
