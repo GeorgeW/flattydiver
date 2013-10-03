@@ -213,6 +213,27 @@ nav{
     color: #bada55;
     position: relative;
 }
+#contact input{
+    font-size: 1.3em;
+    padding: 1em;
+    margin-bottom: 3px;
+    border: none;
+    background-color: rgba(255, 255,255, .9);
+}
+#contact textarea{
+    font-size: 1.3em;
+    background-color: rgba(255,255,255,.9);
+    width: 80%;
+}
+#contact input[type=submit]{
+    background: rgba(255,255,255,.9);
+    color: #555;
+    margin-top: 3px;
+    padding: .4em;
+}
+#contact input[type=submit]:hover{
+    background-color: #bada55;
+}
 .show{
     -webkit-animation: bounceInUp 1100ms linear;
     -moz-webkit-animation: bounceInUp 1100ms linear;
