@@ -158,9 +158,14 @@ html{
     height: 100%;
 }
 body{
-    /*background-color: #3f4e66;*/
+    background-color: #555;
     font-family: "HelveticaNeue", "Helvetica";
-    height: 100%;
+    /*height: 100%;*/
+    background: url('../img/diver.jpg') no-repeat center center fixed; /*Change this image for your background*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 a{
     text-decoration: none;
@@ -175,15 +180,9 @@ nav{
 .container{
     width: 100%;
     height: 100%;
-    background: url('../img/diver.jpg') no-repeat center center fixed; /*Change this image for your background*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-header{
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    padding-bottom: 40px;
+    position: relative;
 }
 .title{
     padding: .5em;
@@ -207,53 +206,32 @@ header{
     background-color: #444;
 }
 .page{
-    padding: 1em;
-    width: 100%;
-    display: none;
-}
-.page-title{
-    width: 20%;
-    color: rgba(0,0,0,.5);
-}
-.page-content{
-    width: 100%;
-}
-.page-content div{
-    display: inline-block;
-}
-.page-content .small-box{
-    width: 30%;
-    background-color: #627f9f;
-    padding: 1em;
-    color: rgba(255, 255, 255, .6);
-}
-.page-content .big-box{
-    width: 60%;
-    background-color: #627f9f;
-    padding: 1em;
-    color: rgba(255, 255, 255, .6);
-}
-.page-content .full-width-box{
-    width: 100%;
-    background-color:  #627f9f;
-    padding: 1em;
-    color: rgba(255, 255, 255, .6);
     margin-top: .5em;
+    padding: 1em;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+    color: #bada55;
+    position: relative;
 }
-.open{
-    display: block;
-    -webkit-animation: bounceInUp 1000ms;
-    -moz-animation: bounceInUp 1000ms;
-    -o-animation: bounceInUp 1000ms;
-    animation: bounceInUp 1000ms;
+.show{
+    -webkit-animation: bounceInUp 1100ms linear;
+    -moz-webkit-animation: bounceInUp 1100ms linear;
+    -ms-webkit-animation: bounceInUp 1100ms linear;
+    -o-webkit-animation: bounceInUp 1100ms linear;
+    animation: bounceInUp 1100ms linear;
+}
+.hidden{
+    display: none;
 }
 footer{
     width: 100%;
     height: 40px;
+    margin-top: 40px;
     background-color: #bada55;
     position: fixed;
     bottom: 0;
     padding-top: .8em;
+    clear: both;
 }
 footer span{
     font-size: .8em;
