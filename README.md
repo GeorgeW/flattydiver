@@ -1,11 +1,10 @@
 # Flatty Diver
 
-- HTML 5
+- HTML 5 boilerplate
 - CSS
-- Javscript
+- Javscript/jQuery
 
-A HTML5 theme that has a flat design.
+A HTML5 theme that has a flat design with full background image.
 
-Later will be put into a wordpress theme and a concrete5 theme
 
 Not complete yet
