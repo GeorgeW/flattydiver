@@ -9,4 +9,4 @@ A HTML5 theme that has a flat design with full background image.
 
 Not complete yet
 
-![Screenshot](../img/flattydiver.png "Flatty Diver")
+![Screenshot](http://g.eorgeo.us/images/flattydiver.png "Flatty Diver")
